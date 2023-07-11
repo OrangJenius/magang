@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_ekspedisi/screens/home.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -96,7 +97,10 @@ class _LoginState extends State<Login> {
                     minimumSize: Size(50.0, 50.0)),
                 child: Text('Login'),
                 onPressed: () {
-                  // Implement login logic here
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomeScreen()),
+                  );
                 },
               ),
             ),
